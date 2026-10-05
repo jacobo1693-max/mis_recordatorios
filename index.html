@@ -9,3 +9,4 @@ function render(){let today=new Date().toISOString().slice(0,10);let rows=data.f
 function esc(s){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}function fmt(d){let [y,m,day]=d.split('-');return `${day}/${m}/${y}`}
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelector('.tabs .active').classList.remove('active');b.classList.add('active');tab=b.dataset.tab;render()});render();if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>
+<!-- prueba conexion vercel -->
